@@ -1,1 +1,12 @@
-remote_theme: volny/creative-theme-jekyll
+# Site settings
+title: Portfolio
+email: test@test.com
+description: 
+baseurl: 
+url: hwlee.org
+
+twitter_username:
+github_username: LHW99
+
+# Build settings
+markdown: kramdown
