@@ -1,12 +1,1 @@
-# Site settings
-title: Portfolio
-email: test@test.com
-description: 
-baseurl: 
-url:
-
-twitter_username:
-github_username: LHW99
-
-# Build settings
-markdown: kramdown
+theme: 
