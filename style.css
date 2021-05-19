@@ -1,0 +1,47 @@
+.intro {
+  width:100vw;
+  height:100vh;
+}
+
+.intro-text {
+  padding-top:20vh;
+}
+
+.title {
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.underline {
+  width: 5rem;
+  height: 0.25rem;
+  margin-bottom: 1.25rem;
+  background: whitesmoke;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn {
+  margin-left:0.5rem;
+  margin-right:0.5rem;
+}
+
+.project-img-container {
+  margin:0.5rem 1.5rem;
+}
+
+.project-img {
+  width:100%;
+  height:auto;
+}
+
+.project-desc {
+  margin:2rem;
+}
+
+@media screen and (min-width: 992px) {
+  .project {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+  }
+}

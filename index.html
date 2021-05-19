@@ -5,24 +5,27 @@
   <meta charset="utf-8">
   <!-- easy viewport optimization -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
   <!-- bootstrap css -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
 </head>
 <body>
-  <div class='position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-dark text-white'>
+  <div class='overflow-hidden p-3 p-md-5 m-md-3 text-center bg-dark text-white intro'>
     <div>
-      <h1 class='display-4 font-weight-normal'>Hey! </br> I'm Harry.</h1>
-      <h4 class='lead font-weight-normal'>Developer</h4>
+      <div class="title">
+        <h1 class='display-4 font-weight-normal intro-text'>Hey! </br> I'm Harry.</h1>
+        <h1 class="underline"></h1>
+        <h4 class='lead font-weight-normal'>Developer</h4>
+      </div>
+      <a class='btn btn-outline-secondary' onClick={document.getElementById('projects').scrollIntoView()}>PROJECTS</a>
       <a class='btn btn-outline-secondary' href='https://github.com/LHW99/'>GITHUB</a>
       <a class='btn btn-outline-secondary' href='mailto:20hwlee@gmail.com'>E-MAIL</a>
     </div>
   </div>
 
-  <div class='overflow-hidden p-3 p-md-5 m-md-3 bg-light text-dark' style='display:grid;grid-template-columns:1fr 1fr'>
-    <div class='rounded' style='margin:0.5rem 1.5rem'>
-      <img class='shadow img-fluid border border-2' style='width:100%;height:auto' src="images/2.png" alt='stock-portfolio-screenshot'>
-    </div>
-    <div class='rounded' style='margin:2rem'>
+  <div id='projects' class='overflow-hidden p-3 p-md-5 m-md-3 bg-light text-dark project'>
+    <div class='rounded project-desc'>
       <h3>Stock Portfolio Simulator</h3>
       <p class='lead font-weight-normal'>Using a virtual portfolio, buy and sell stocks listed on the NASDAQ. Check your performance against other users
         via the leaderboard. Written using Django.</p>
@@ -30,29 +33,32 @@
       <a class='btn btn-outline-secondary' href='https://github.com/LHW99/stock_portfolio'>GITHUB</a>
       <a class='btn btn-outline-secondary' href='https://stock-portfolio-ndp96.ondigitalocean.app/'>HOST</a>
     </div>
+    <div class='rounded project-img-container'>
+      <img class='shadow img-fluid border border-2 project-img' src="images/2.png" alt='stock-portfolio-screenshot'>
+    </div>
   </div>
 
-  <div class='overflow-hidden p-3 p-md-5 m-md-3 bg-dark text-light' style='display:grid;grid-template-columns:1fr 1fr'>
-    <div class='rounded' style='margin:2rem'>
+  <div class='overflow-hidden p-3 p-md-5 m-md-3 bg-dark text-light project'>
+    <div class='rounded project-desc'>
       <h3>Restaurant Menu</h3>
       <p class='lead font-weight-normal'>A restaurant menu page written using React.</p>
       <a class='btn btn-outline-secondary' href='https://github.com/LHW99/menu'>GITHUB</a>
       <a class='btn btn-outline-secondary' href='https://youthful-lichterman-8fe9b9.netlify.app'>HOST</a>
     </div>
-    <div class='rounded' style='margin:0.5rem 1.5rem'>
-      <img class='shadow img-fluid border border-2 border-light' style='width:100%;height:auto;border:solid' src="images/3.png" alt='menu-screenshot'>
+    <div class='rounded project-img-container'>
+      <img class='shadow img-fluid border border-2 border-light project-img' src="images/3.png" alt='menu-screenshot'>
     </div>
   </div>
 
-  <div class='overflow-hidden p-3 p-md-5 m-md-3 bg-light text-dark' style='display:grid;grid-template-columns:1fr 1fr'>
-    <div class='rounded' style='margin:0.5rem 1.5rem'>
-      <img class='shadow img-fluid border border-2' style='width:100%;height:auto;' src="images/1.png" alt='brochure-screenshot'>
-    </div>
-    <div class='rounded' style='margin:2rem'>
+  <div class='overflow-hidden p-3 p-md-5 m-md-3 bg-light text-dark project'>
+    <div class='rounded project-desc'>
       <h3>Brochure Site</h3>
       <p class='lead font-weight-normal'>A clean, simple brochure site written using React.</p>
       <a class='btn btn-outline-secondary' href='https://github.com/LHW99/tours'>GITHUB</a>
       <a class='btn btn-outline-secondary' href='https://practical-northcutt-9537ab.netlify.app'>HOST</a>
+    </div>
+    <div class='rounded project-img-container'>
+      <img class='shadow img-fluid border border-2 project-img' src="images/1.png" alt='brochure-screenshot'>
     </div>
   </div>
 </body>
